@@ -9,19 +9,22 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <ol>
+        <table border="2">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Rating</th>
+                <th>Favourite Character</th>
+            </tr>
             {% for show in shows %}
-            <li>
-            <ul>
-            <li><b>Name: </b>{{show.name}}</li>
-            <li><b>Date: </b>{{show.date}}</li>
-            <li><b>Rating: </b>{{show.rating}}</li>
-            <li><b>Favourite Character: </b>{{show.fav_character}}</li>
-            </ul>
-            </li>
-            <hr>
+            <tr>
+                <td>{{show.name}}</td>
+                <td>{{show.date}}</td>
+                <td>{{show.rating}}</td>
+                <td>{{show.fav_character}}</td>
+            </tr>
             {% endfor %}
-        </ol>
+        </table>
         <br>
         <br>
         <a href="add/">Add Show</a>
