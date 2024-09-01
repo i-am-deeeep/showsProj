@@ -22,6 +22,8 @@
                 <td>{{show.date}}</td>
                 <td>{{show.rating}}</td>
                 <td>{{show.fav_character}}</td>
+                <td><a href="/delete/{{show.id}}">Delete</a></td>
+                <td><a href="/update/{{show.id}}">Update</a></td>
             </tr>
             {% endfor %}
         </table>
