@@ -5,5 +5,6 @@ urlpatterns = [
     path("", views.index),
     path("add/",views.addShow),
     path("delete/<int:id>/",views.deleteShow),
-    path("update/<int:id>/",views.updateShow)
+    path("update/<int:id>/",views.updateShow),
+    path("logout_confirmed/",views.logout_confirmed)
 ]

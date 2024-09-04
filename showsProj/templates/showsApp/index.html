@@ -30,5 +30,11 @@
         <br>
         <br>
         <a href="add/">Add Show</a>
+        
+        <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+
     </body>
 </html>
